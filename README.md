@@ -17,9 +17,14 @@ Como o HTML é usado para projetar o layout do site então, primeiro criamos o l
 
 <h3>Interatividade com Javascript</h3>
 <li>O primeiro item evidente deste projeto é o uso de DOM (document object model) para fazer as interações entre os arquivos HTML e CSS com o Javascript, atráves de, maioritariamente o uso do <code>document.querySelector</code></li>
+
 <li>Foi utilizado arrays para armazenar os meses do ano</li>
+
 <li>Utilizando o método <code>JSON.parse</code> foi possível armazenar o valor de <code>note</code> dentro do browser, guardando asssim todas as informações das notas mesmo que a página seja recarregada. </li>
+
 <li>Além disso foi criado uma função anônima dentro da qual será criado o formulário, e usando o "click" <code>Eventlistener</code> quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
+
+<li></li>
 
 
 
