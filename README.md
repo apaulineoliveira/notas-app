@@ -24,7 +24,7 @@ Como o HTML é usado para projetar o layout do site então, primeiro criamos o l
 
 <li>Além disso foi criado uma função anônima dentro da qual será criado o formulário, e usando o "click" <code>Eventlistener</code> quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
 
-<li></li>
+
 
 
 
