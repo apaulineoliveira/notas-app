@@ -25,7 +25,8 @@
 
   <li>Além disso foi criado uma função anônima dentro da qual será criado o formulário, e usando o "click" <code>Eventlistener</code> quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
 
-<h1>In English</h1>
+<br></br><br></br>
+<h1>Goal</h1>
   <p>The purpose of this project was to create a note system using HTML, CSS, a little Bootstrap, and pure Javascript.</p>
 <h3><b>Relevant points about the project:</b></h3>
 In this project, <code>localStorage</code> is used to store the notes that the user created and prevent the user from losing his notes after the page is updated or closed. Storing them in the browser.<br></br>
