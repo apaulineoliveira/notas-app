@@ -1,31 +1,67 @@
-#  🧵 Objetivo
-  <p>O inuito desse projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro.</p>
+ <h1 align="center">Objetivo</h1>
+  <p>O inuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Visualização do projeto".</p>
+  
+<br>
 
-<h3><b>Pontos relevantes sobre o projeto:</b></h3>
-<p>Neste projeto é utilizado o <code>localStorage</code> para armazenar as notas que o usuário criou e impedir que após a página ser atualizada ou fechada o mesmo perca as suas anotações. Armazenando-as no browser.<br></br></p>
+<h3 align="center"><b>Pontos relevantes sobre o projeto:</b></h3>
+<p>Neste projeto é utilizado o <code>localStorage</code> para armazenar as notas que o usuário criou e impedir que após a página ser atualizada ou fechada o mesmo perca as suas anotações. Armazenando-as no browser. Como o HTML é utilizado para projetar o "esqueleto" do site, em primeira instância foi projetada a estrutura, em seguida, a estilização com o CSS, e por fim, adicionamos interações ao clicar no botão, com a linguagem Javascript.</p>
 
-  <p>Como o HTML é usado para projetar o layout do site então, primeiro criamos o layout, depois estilizamos e, finalmente, adicionamos recursos ao botão (ao clicar, o menu do botão é aberto). Alguns pontos relevantes sobre a estrutura HTML:</p>
+<br>
+<h3 align="center">Alguns pontos relevantes sobre a estrutura em HTML:</h3> 
+   <p>Para implementar o ícone de adição de nota importaremos uma URL do Font Awesome e adicionaremos ao <code>header</code> da seguinte forma:</p><br>
+    
+    <script src="https://kit.fontawesome.com/5eb2c51ffb.js" crossorigin="anonymous"></script>   
+   
+<ul>
+    <li>O ícone (+) será adicionado dentro da estrutura utilizando a tag <code>i</code> e a classe font-awesome;</li>
+    <li>Criaremos um formulário com a tag <code>form</code> que usaremos posteriormente para fazer as notas do sistema;</li>
+    <li>Usando a tag de <code>button</code> criaremos um botão que será responsável por adicionar novas notas.</li>
+  </ul>  
+    
+<br>
+
+<h3 align="center">Estrutura CSS</h3>
+  <p>Se tratando da folha de estilo foi utilizado uma estrutura de design responsivo visando o êxito e excelente visualização em qualquer dispositivo que o usuário esteja acessando. Utilizei CSS Reset com <code>margin</code> e <code>padding</code> em 0; Além de utilizar flex-box.</p>
+
+<br>
+
+<h3 align="center">Interatividade com Javascript</h3>
+  <p>Trabalhamos com o uso de DOM (Document Object Model) para fazer as interações entre os arquivos html e css e javascript, maioritariamente como o uso de <code>document.querySelector</code>.</p>
   <ul>
-<li>Para implementar o ícone de adição de nota importaremos uma URL do Font Awesome e adicionaremos ao <code>header</code> da seguinte forma: <br></br><code><script src="https://kit.fontawesome.com/5eb2c51ffb.js" crossorigin="anonymous"></script></code></li></br>
-<li>O ícone (+) será adicionado dentro da estrutura utilizando a tag <code>i</code> e a classe font-awesome.</li>
-<li>Criaremos um formulário com a tag <code>form</code> que usaremos posteriormente para fazer as notas do sistema</li>
-<li>Usando a tag de <code>button</code> criaremos um botão que será responsável por adicionar novas notas</li>
+     <li>Para armazenar os meses do ano foi apropriado manusear arrays;</li>
+     <li>Utilizando o método <code>JSON.parse</code> foi possível armazenar o valor de <code>note</code> dentro do browser, guardando asssim, todas as informações das notas mesmo que a página seja recarregada;</li>
+     <li>Além disso, foi criada uma função <b>anônima</b> dentro da qual será criada o formulário usando o evento "click" <code>Eventlistener</code>, quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
   </ul>
+    
+#
 
-<h3>Estrutura CSS</h3>
-  <li>Se tratando da folha de estilo foi utilizado uma estrutura de design responsivo visando a boa visualização em qualquer dispositivo. Utilizei CSS Reset com <code>margin</code> e <code>padding</code> em 0. Além de utilizar flex-box.</li>
 
 
-<h3>Interatividade com Javascript</h3>
-<li>O primeiro item evidente deste projeto é o uso de DOM (document object model) para fazer as interações entre os arquivos HTML e CSS com o Javascript, atráves de, maioritariamente o uso do <code>document.querySelector</code></li>
 
-  <li>Foi utilizado arrays para armazenar os meses do ano</li>
 
-  <li>Utilizando o método <code>JSON.parse</code> foi possível armazenar o valor de <code>note</code> dentro do browser, guardando asssim todas as informações das notas mesmo que a página seja recarregada. </li>
 
-  <li>Além disso foi criado uma função anônima dentro da qual será criado o formulário, e usando o "click" <code>Eventlistener</code> quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
 
-<br></br><br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
 <h1>Goal</h1>
   <p>The purpose of this project was to create a note system using HTML, CSS, a little Bootstrap, and pure Javascript.</p>
 <h3><b>Relevant points about the project:</b></h3>
