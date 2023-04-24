@@ -1,5 +1,5 @@
  <h1 align="center">Objetivo</h1>
-  <p>O inuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Visualização do projeto".</p>
+  <p>O inuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. <br> ⚠️ Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Visualização do projeto".</p>
   
 <br>
 
