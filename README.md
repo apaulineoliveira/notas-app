@@ -1,7 +1,7 @@
  <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="50" width="50"/>
  
  <h1 align="center">Objetivo</h1>
-  <p>O inuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. <br> ⚠️ Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Visualização do projeto".</p>
+  <p>O inuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. <br> ⚠️ Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Layout do projeto".</p>
   
 <br>
 
