@@ -1,4 +1,6 @@
  <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_960_720.png" height="50" width="50"/>
+
+ <p>Visualização do Projeto: https://notas-app-vanilla-js.netlify.app/</p>
  
  <h1 align="center">Objetivo</h1>
   <p>O intuito deste projeto foi criar um sistema de notas utilizando HTML, CSS, um pouco de Bootstrap, e Javascript puro. <br></br> Obs: Para visualizar a estilização da aplicação basta acessar a pasta acima intitulada "Layout do projeto".</p>
@@ -16,7 +18,15 @@
      <li>Além disso, foi criada uma função <b>anônima</b> dentro da qual será criada o formulário usando o evento "click" <code>Eventlistener</code>, quando o usuário clicar sobre o ícone o formulário de notas irá aparecer.</li>
   </ul>
     
-
+<h3>Melhorias futuras</h3>
+<ul>
+ <li>Implementar funcionalidade de fechar nota</li>
+  <li>Implementar funcionalidade de cancelar, em cima de adicionar nota</li>
+  <li>Implementar funcionalidade de salvar nota</li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
 
 
