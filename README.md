@@ -23,7 +23,7 @@
  <li>Implementar funcionalidade de fechar nota</li>
   <li>Implementar funcionalidade de cancelar, em cima de adicionar nota</li>
   <li>Implementar funcionalidade de salvar nota</li>
-  <li></li>
+  <li>Melhorar UI</li>
   <li></li>
   <li></li>
 </ul>
