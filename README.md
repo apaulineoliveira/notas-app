@@ -25,7 +25,8 @@
   <li>Implementar funcionalidade de salvar nota</li>
   <li>Melhorar UI</li>
   <li>Melhorar readme</li>
-  <li></li>
+  <li>Implementar funcionalidade de salvar notas</li>
+  <li>Implementar funcionalidade de login integrado ao google</li>
 </ul>
 
 
