@@ -24,7 +24,7 @@
   <li>Implementar funcionalidade de cancelar, em cima de adicionar nota</li>
   <li>Implementar funcionalidade de salvar nota</li>
   <li>Melhorar UI</li>
-  <li></li>
+  <li>Melhorar readme</li>
   <li></li>
 </ul>
 
