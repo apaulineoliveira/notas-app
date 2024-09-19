@@ -206,13 +206,18 @@ body {
 .content form input {
   color: #6d6d6d;
   background-color: #fff;
-  border: none; /* Remove a borda padrão */
-  border-bottom: 1px solid #ADBC9F; /* Adiciona uma linha na parte inferior */
+  border: none; 
+  border-bottom: 1px solid #ADBC9F; 
 }
 
 .menu li {
   font-size: 10px !important;
   color: #6d6d6d;
+}
+
+.settings i:hover {
+  color: #8aa87c; 
+  transition: 0.6s;
 }
 
 form .row label {
