@@ -4,27 +4,32 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #37065a;
+  background-color: #EDEEF0;
 }
 
 .wrapper {
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 265px);
+  grid-template-columns: repeat(auto-fill, 25%);
   gap: 15px;
+  border-radius: 20px;
 }
 
 .wrapper li {
-  background-color: #fff;
   list-style: none;
   height: 250px;
   border-radius: 1px;
   padding: 15px 20px 20px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(200, 200, 200, 0.6);
 }
+
 .wrapper .note {
   display: flex;
   flex-direction: column;
@@ -44,16 +49,16 @@ body {
   height: 78px;
   width: 78px;
   border-radius: 50%;
-  border: 2px dashed powderblue;
+  border: 2px solid #ADBC9F;
   font-size: 40px;
-  color: #88abff;
+  color: #ADBC9F;
   cursor: pointer;
 }
 
 .add-box p {
   font-weight: 500;
   margin-top: 20px;
-  color: #88abff;
+  color: #869a74;
 }
 
 .note p {
@@ -121,6 +126,7 @@ body {
 
 .menu li i {
   padding-right: 8px;
+  
 }
 
 .menu li:hover {
@@ -158,9 +164,9 @@ body {
   padding: 15px 25px;
 }
 
-.popup .content header p {
-  font-weight: 500;
-  font-size: 20px;
+.popup .content header h3 {
+  font-weight: 200;  
+  color: #869a74;
 }
 
 .popup .content header i {
@@ -179,23 +185,31 @@ body {
   outline: none;
   font-size: 17px;
   border-radius: 4px;
-  border: 1px solid #999;
+  border: 1px solid #ADBC9F;
   padding: 0 15px;
 }
 
 form .row label {
   margin-bottom: 6px;
-  font-size: 18px;
+  margin-top:  25px;;
+  font-size: 12px;
   display: block;
+  font-weight: 200;  
+  color: #ADBC9F;
 }
+
+
+
 .content form textarea {
   height: 150px;
   resize: none;
   padding: 8px 15px;
+  color: #6d6d6d;
+  
 }
 
 .content form button {
-  background-color: #6a93f8;
+  background-color: #6c7761;
   height: 50px;
   width: 100%;
   margin: 15px 0;
