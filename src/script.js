@@ -22,25 +22,37 @@ const descTag = popupBox.querySelector("textarea");
 const addBtn = popupBox.querySelector("button");
 
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+const lastId = parseInt(localStorage.getItem("lastId") || "0");
 
 const menuel = document.querySelector(".iconel");
 
+// Função para gerar o próximo ID sequencial
+const getNextId = () => {
+  const currentId = parseInt(localStorage.getItem("lastId") || "0");
+  const newId = currentId + 1;
+  localStorage.setItem("lastId", newId);
+  return newId;
+};
+
 const showNotes = () => {
   document.querySelectorAll(".note").forEach((note) => note.remove());
+  
+  // Ordena as notas em ordem crescente pelo ID
+  notes.sort((a, b) => b.id - a.id );
+  
   notes.forEach((note, index) => {
     let litag = `<li class="note">
                             <div class="details">
                                 <p> ${note.title} </p>
-                                <span>${note.description}
-                                </span>
+                                <span>${note.description}</span>
                             </div>
                             <div class="bottom-content">
                                 <span>${note.date}</span>
                                 <div class="settings">
-                                    <i onclick=showMenu(this) class="fa-solid fa-ellipsis iconel"></i>
+                                    <i onclick=showMenu(this) class="fa-solid fa-gear"></i>
                                     <ul class="menu">
-                                        <li onclick="editNote(${index},'${note.title}','${note.description}')"><i class="fa-solid fa-pencil"></i></i>EDITAR</li>
-                                        <li onclick="deleteNote(${index})"><i class="fa-solid fa-trash"></i></i>EXCLUIR</li>
+                                        <li onclick="editNote(${index},'${note.title}','${note.description}')"><i class="fa-solid fa-pencil"></i>EDITAR</li>
+                                        <li onclick="deleteNote(${index})"><i class="fa-solid fa-trash"></i>EXCLUIR</li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,12 +69,10 @@ function showMenu(elem) {
       elem.parentElement.classList.remove("show");
     }
   };
-  // console.log(elem)
 }
 
 function deleteNote(noteId) {
   notes.splice(noteId, 1);
-
   localStorage.setItem("notes", JSON.stringify(notes));
   showNotes();
 }
@@ -71,9 +81,7 @@ function editNote(noteId, title, description) {
   titleTag.value = title;
   descTag.value = description;
   addBox.click();
-
   deleteNote(noteId);
-  // console.log(noteId)
 }
 
 addBox.onclick = () => popupBox.classList.add("show");
@@ -85,7 +93,6 @@ closeBox.onclick = () => {
 
 addBtn.onclick = (e) => {
   e.preventDefault();
-  //    menuel.classList.add('hide-icon')
 
   let ti = titleTag.value;
   let desc = descTag.value;
@@ -96,6 +103,7 @@ addBtn.onclick = (e) => {
   let year = currentDate.getFullYear();
 
   let noteInfo = {
+    id: getNextId(), // Gera o próximo ID sequencial
     title: ti,
     description: desc,
     date: `${day} ${month} ${year}`,
@@ -106,8 +114,6 @@ addBtn.onclick = (e) => {
   localStorage.setItem("notes", JSON.stringify(notes));
 
   closeBox.click();
-
-  //    menuel.classList.remove('hide-icon')
   showNotes();
 };
 

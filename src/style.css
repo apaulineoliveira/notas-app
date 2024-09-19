@@ -1,7 +1,7 @@
-/* Importa a fonte Poppins */
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap");
 
-/* Reset e box-sizing */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +16,7 @@ body {
 .wrapper {
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta o tamanho mínimo das colunas */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
   gap: 15px;
   border-radius: 20px;
 }
@@ -28,7 +28,7 @@ body {
   padding: 15px 20px 20px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px rgba(200, 200, 200, 0.6);
-  overflow: hidden; /* Garante que o conteúdo não vaze */
+  overflow: hidden; 
 }
 
 .wrapper .note {
@@ -46,6 +46,8 @@ body {
   flex-direction: column;
 }
 
+
+
 .add-box .icon {
   height: 78px;
   width: 78px;
@@ -60,15 +62,15 @@ body {
   font-weight: 500;
   margin-top: 20px;
   color: #869a74;
-  text-align: center; /* Centraliza o texto */
-  overflow-wrap: break-word; /* Quebra palavras longas */
+  text-align: center;
+  overflow-wrap: break-word; 
 }
 
 .note p {
   font-size: 22px;
   font-weight: 500;
-  color: #869a74; /* Cor do título da nota */
-  overflow-wrap: break-word; /* Quebra palavras longas */
+  color: #869a74; 
+  overflow-wrap: break-word;
 }
 
 .note span {
@@ -76,7 +78,7 @@ body {
   font-size: 12px;
   color: #898989;
   margin-top: 5px;
-  overflow-wrap: break-word; /* Quebra palavras longas */
+  overflow-wrap: break-word;
 }
 
 .note .bottom-content {
@@ -87,10 +89,12 @@ body {
 }
 
 .bottom-content span {
-  color: #6d6d6d;
-  font-size: 14px;
-  overflow-wrap: break-word; /* Quebra palavras longas */
+  color: #6a7254;
+  font-size: 10px;
+  overflow-wrap: break-word; 
 }
+
+
 
 .bottom-content .settings i {
   cursor: pointer;
@@ -153,7 +157,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Garanta que o modal esteja sobre outros elementos */
+  z-index: 1000; 
 }
 
 .popup {
@@ -196,11 +200,14 @@ body {
   border-radius: 4px;
   border: 1px solid #ADBC9F;
   padding: 0 15px;
+  
 }
 
 .content form input {
   color: #6d6d6d;
   background-color: #fff;
+  border: none; /* Remove a borda padrão */
+  border-bottom: 1px solid #ADBC9F; /* Adiciona uma linha na parte inferior */
 }
 
 .menu li {
@@ -236,6 +243,10 @@ form .row label {
   color: #fff;
 }
 
+.content form button:hover {
+  background-color: #88967a;
+}  
+
 .popup-box,
 .popup-box.popup {
   opacity: 0;
@@ -252,38 +263,38 @@ form .row label {
   display: none;
 }
 
-/* Ajustes de responsividade para textos */
+
 @media (max-width: 768px) {
   .add-box p {
-    font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 16px; 
   }
 
   .note p {
-    font-size: 18px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 18px; 
   }
 
   .note span {
-    font-size: 11px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 11px; 
   }
 
   .bottom-content span {
-    font-size: 13px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 13px; 
   }
 
   .settings .menu li {
-    font-size: 14px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 14px; 
   }
 
   form .row label {
-    font-size: 11px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 11px; 
   }
 
   .content form input,
   .content form textarea {
-    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 15px; 
   }
 
   .content form button {
-    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+    font-size: 15px; 
   }
 }
