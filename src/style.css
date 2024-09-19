@@ -1,10 +1,11 @@
+/* Importa a fonte Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap");
 
+/* Reset e box-sizing */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 .wrapper {
   margin: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 25%);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta o tamanho mínimo das colunas */
   gap: 15px;
   border-radius: 20px;
 }
@@ -23,11 +24,11 @@ body {
 .wrapper li {
   list-style: none;
   height: 250px;
-  border-radius: 1px;
+  border-radius: 12px;
   padding: 15px 20px 20px;
   background-color: #FFFFFF;
-  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(200, 200, 200, 0.6);
+  overflow: hidden; /* Garante que o conteúdo não vaze */
 }
 
 .wrapper .note {
@@ -59,18 +60,23 @@ body {
   font-weight: 500;
   margin-top: 20px;
   color: #869a74;
+  text-align: center; /* Centraliza o texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
 }
 
 .note p {
   font-size: 22px;
   font-weight: 500;
   color: #869a74; /* Cor do título da nota */
+  overflow-wrap: break-word; /* Quebra palavras longas */
 }
+
 .note span {
   display: block;
   font-size: 12px;
   color: #898989;
   margin-top: 5px;
+  overflow-wrap: break-word; /* Quebra palavras longas */
 }
 
 .note .bottom-content {
@@ -83,6 +89,7 @@ body {
 .bottom-content span {
   color: #6d6d6d;
   font-size: 14px;
+  overflow-wrap: break-word; /* Quebra palavras longas */
 }
 
 .bottom-content .settings i {
@@ -103,13 +110,10 @@ body {
   border-radius: 4px;
   background-color: #fff;
   right: -4px;
-
   transform: scale(0);
   transform-origin: bottom right;
   transition: transform 0.2s ease;
 }
-
-
 
 .menu li i.fa-pencil,
 .menu li i.fa-trash {
@@ -133,7 +137,6 @@ body {
 
 .menu li i {
   padding-right: 8px;
-  
 }
 
 .menu li:hover {
@@ -147,14 +150,13 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garanta que o modal esteja sobre outros elementos */
 }
 
-.popup-box .popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+.popup {
   max-width: 400px;
   width: 100%;
 }
@@ -172,7 +174,7 @@ body {
 }
 
 .popup .content header h3 {
-  font-weight: 200;  
+  font-weight: 200;
   color: #869a74;
 }
 
@@ -181,7 +183,6 @@ body {
   cursor: pointer;
   color: #8b8989;
 }
-
 
 .content form {
   margin: 15px 25px 35px;
@@ -198,37 +199,29 @@ body {
 }
 
 .content form input {
- 
-  color: #6d6d6d; 
-  background-color: #fff; 
+  color: #6d6d6d;
+  background-color: #fff;
 }
-
 
 .menu li {
-  font-size: 10px !important; 
-  color: #6d6d6d ;   
-  
+  font-size: 10px !important;
+  color: #6d6d6d;
 }
-
-
 
 form .row label {
   margin-bottom: 6px;
-  margin-top:  25px;;
+  margin-top: 25px;
   font-size: 12px;
   display: block;
-  font-weight: 200;  
+  font-weight: 200;
   color: #ADBC9F;
 }
-
-
 
 .content form textarea {
   height: 150px;
   resize: none;
   padding: 8px 15px;
   color: #6d6d6d;
-  
 }
 
 .content form button {
@@ -257,4 +250,40 @@ form .row label {
 
 .hide-icon {
   display: none;
+}
+
+/* Ajustes de responsividade para textos */
+@media (max-width: 768px) {
+  .add-box p {
+    font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .note p {
+    font-size: 18px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .note span {
+    font-size: 11px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .bottom-content span {
+    font-size: 13px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .settings .menu li {
+    font-size: 14px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  form .row label {
+    font-size: 11px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .content form input,
+  .content form textarea {
+    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+
+  .content form button {
+    font-size: 15px; /* Ajuste o tamanho da fonte para telas menores */
+  }
 }
