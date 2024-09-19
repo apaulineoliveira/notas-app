@@ -64,8 +64,8 @@ body {
 .note p {
   font-size: 22px;
   font-weight: 500;
+  color: #869a74; /* Cor do título da nota */
 }
-
 .note span {
   display: block;
   font-size: 12px;
@@ -107,6 +107,13 @@ body {
   transform: scale(0);
   transform-origin: bottom right;
   transition: transform 0.2s ease;
+}
+
+
+
+.menu li i.fa-pencil,
+.menu li i.fa-trash {
+  color: #869a74;
 }
 
 .settings.show .menu {
@@ -175,6 +182,7 @@ body {
   color: #8b8989;
 }
 
+
 .content form {
   margin: 15px 25px 35px;
 }
@@ -188,6 +196,21 @@ body {
   border: 1px solid #ADBC9F;
   padding: 0 15px;
 }
+
+.content form input {
+ 
+  color: #6d6d6d; 
+  background-color: #fff; 
+}
+
+
+.menu li {
+  font-size: 10px !important; 
+  color: #6d6d6d ;   
+  
+}
+
+
 
 form .row label {
   margin-bottom: 6px;
