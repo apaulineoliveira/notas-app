@@ -26,7 +26,7 @@ const lastId = parseInt(localStorage.getItem("lastId") || "0");
 
 const menuel = document.querySelector(".iconel");
 
-// Função para gerar o próximo ID sequencial
+
 const getNextId = () => {
   const currentId = parseInt(localStorage.getItem("lastId") || "0");
   const newId = currentId + 1;
@@ -36,25 +36,28 @@ const getNextId = () => {
 
 const showNotes = () => {
   document.querySelectorAll(".note").forEach((note) => note.remove());
-  
-  // Ordena as notas em ordem crescente pelo ID
-  notes.sort((a, b) => b.id - a.id );
-  
+  notes.sort((a, b) => b.id - a.id);
+
+
   notes.forEach((note, index) => {
     let litag = `<li class="note">
+    
                             <div class="details">
                                 <p> ${note.title} </p>
                                 <span>${note.description}</span>
                             </div>
+
                             <div class="bottom-content">
+
                                 <span>${note.date}</span>
-                                <div class="settings">
-                                    <i onclick=showMenu(this) class="fa-solid fa-gear"></i>
-                                    <ul class="menu">
-                                        <li onclick="editNote(${index},'${note.title}','${note.description}')"><i class="fa-solid fa-pencil"></i>EDITAR</li>
-                                        <li onclick="deleteNote(${index})"><i class="fa-solid fa-trash"></i>EXCLUIR</li>
-                                    </ul>
-                                </div>
+                                  <div class="settings">
+                                      <i onclick=showMenu(this) class="fa-solid fa-gear"></i>
+
+                                      <ul class="menu">
+                                          <li onclick="editNote(${index},'${note.title}','${note.description}')"><i class="fa-solid fa-pencil"></i>EDITAR</li>
+                                          <li onclick="deleteNote(${index})"><i class="fa-solid fa-trash"></i>EXCLUIR</li>
+                                      </ul>
+                                  </div>
                             </div>
                      </li>`;
 
@@ -103,7 +106,7 @@ addBtn.onclick = (e) => {
   let year = currentDate.getFullYear();
 
   let noteInfo = {
-    id: getNextId(), // Gera o próximo ID sequencial
+    id: getNextId(),
     title: ti,
     description: desc,
     date: `${day} ${month} ${year}`,
